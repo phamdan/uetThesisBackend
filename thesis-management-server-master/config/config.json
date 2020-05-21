@@ -1,0 +1,12 @@
+
+{
+  "development": {
+    "username": "root",
+    "password": "123456789", 
+    "database": "uet_thesis",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "dialect": "mysql"
+  },
+  "use_env_variable": false
+}

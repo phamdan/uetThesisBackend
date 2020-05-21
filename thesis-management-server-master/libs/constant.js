@@ -1,0 +1,20 @@
+const THESIS_STATE = {
+    NEW: 'NEW',
+    WAITTING: 'WAITTING',
+    ACTIVE: 'ACTIVE',
+    CANCELED: 'CANCELED',
+    COMPLETED: 'COMPLETED'
+}
+
+const USER_ROLE = {
+    STUDENT: 'STU',
+    LECTURER: 'LEC',
+    MANAGER: 'MAN'
+}
+
+const ACTIVITY_STATE = {
+    LOGGING: 'LOGGING',
+    CHAT: 'CHAT'
+}
+
+module.exports = {THESIS_STATE, USER_ROLE, ACTIVITY_STATE}
