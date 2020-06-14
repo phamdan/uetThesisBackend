@@ -50,6 +50,9 @@ class StudentThesisService {
                 state: Constant.ACTIVITY_STATE.LOGGING,
                 creatorId: userId
             })
+            // student.numberNewActivity = student.numberNewActivity + 1;
+            // lecturer.numberNewActivity = lecturer.numberNewActivity + 1;
+            // await Promise.all([createActivity, student.save(), lecturer.save()])
             let numberNewActivity = student.numberNewActivity + 1
             let updateActivityStudent =  StudentsRepository.updateAttributes(student, {numberNewActivity})
             let numberNewActivityLecturer = lecturer.numberNewActivity + 1
@@ -58,6 +61,11 @@ class StudentThesisService {
             return thesisUpdate
         }
     }
+
+
+
+
+
 
     static async exitThesis(userId, thesisId) {
         let student = await StudentsRepository.findOne({
